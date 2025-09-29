@@ -10,7 +10,7 @@ class Solution:
         for i in range(n -2, -1, -1):
             if nums[i] < largest: #found the next smaller number
                 nextLargest = nums[i]
-                operations += n - i - 1 # all bigger numbers reduced once
+                operations += n - i - 1 # the number of elements strictly to the right of index i.
                 largest = nextLargest
         
         return operations    
